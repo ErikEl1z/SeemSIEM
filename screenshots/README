@@ -1,0 +1,83 @@
+# Screenshots Index
+
+This directory contains all screenshots used to document the Azure SIEM ingestion pipeline.  
+Each subfolder corresponds to a specific stage in the build process.
+
+---
+
+## 📁 Folder Breakdown
+
+### `/sysmon`
+Screenshots showing:
+- Sysmon installation  
+- Sysmon configuration file  
+- Sysmon Operational logs in Event Viewer  
+- Verification that Sysmon is generating telemetry  
+
+---
+
+### `/dcr`
+Screenshots showing:
+- Data Collection Rule (DCR) creation  
+- Log channel mappings (Security, System, Application, Sysmon)  
+- Resource binding of the VM to the DCR  
+- Final DCR validation  
+
+---
+
+### `/ama`
+Screenshots showing:
+- Azure Monitor Agent (AMA) installation  
+- AMA extension status on the VM  
+- Heartbeat confirmation in Log Analytics  
+- AMA connectivity validation  
+
+---
+
+### `/eventviewer`
+Screenshots showing:
+- Windows Security logs  
+- Windows System logs  
+- Windows Application logs  
+- Sysmon Operational logs  
+- Local verification before ingestion  
+
+---
+
+### `/workspace`
+Screenshots showing:
+- Log Analytics Workspace overview  
+- Tables (Event, SecurityEvent, Sysmon, Heartbeat)  
+- Workspace ingestion confirmation  
+- Query results demonstrating successful ingestion  
+
+---
+
+### `/kql`
+Screenshots showing:
+- KQL queries used for validation  
+- Query results for SecurityEvent, Sysmon, Application/System logs  
+- Heartbeat query results  
+- Event table sanity checks  
+
+---
+
+##  Purpose of This Directory
+
+These screenshots serve as visual documentation of the full SIEM pipeline:
+
+Windows VM → Sysmon → AMA → DCR → Log Analytics → KQL
+
+They provide evidence of:
+- Correct configuration  
+- Successful ingestion  
+- Proper mapping  
+- Working queries  
+- End‑to‑end SIEM functionality  
+
+---
+
+
+
+---
+
