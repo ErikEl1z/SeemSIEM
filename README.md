@@ -1,0 +1,2 @@
+# SeemSIEM
+Azure SIEM buildout
